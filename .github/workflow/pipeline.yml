@@ -1,0 +1,12 @@
+name: workflow practica java
+on:
+  pull_request:
+    branches:
+      -main
+jobs:
+  contruir-y-compilar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener codigo /comprobar
+        uses: actions/checkout@v4
